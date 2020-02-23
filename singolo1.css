@@ -358,7 +358,14 @@ template {
 [hidden] {
   display: none;
 }
+/**
+ * Singolo style starts here
+ */
+@import url("./assets/fonts/fonts.css");
+
 .body {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+
   background-color: #000000;
 }
 .wrapper {
@@ -369,13 +376,19 @@ template {
   background-color: #2d303a;
 }
 .logo__text {
+  font-weight: bold;
+  font-size: 25px;
   color: #ffffff;
+  text-transform: uppercase;
 }
 .logo__star {
   color: #f06c64;
 }
 .menu__item {
+  font-weight: bold;
+  font-size: 12px;
   color: #ffffff;
+  text-transform: uppercase;
 }
 .menu__item_colored {
   color: #f06c64;
@@ -388,9 +401,24 @@ template {
 }
 .services__h1,
 .cell__h2 {
+  font-weight: 900;
   color: #666d89;
+}
+.services__h1 {
+  font-size: 30px;
+}
+.cell__h2 {
+  font-size: 18px;
 }
 .services__lead-text,
 .cell__text {
   color: #767e9e;
+}
+.services__lead-text {
+  font-weight: 300;
+  font-size: 18px;
+}
+.cell__text {
+  font-weight: 400;
+  font-size: 12px;
 }
