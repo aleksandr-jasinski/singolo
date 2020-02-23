@@ -358,3 +358,39 @@ template {
 [hidden] {
   display: none;
 }
+.body {
+  background-color: #000000;
+}
+.wrapper {
+  width: 1020px;
+  margin: 0 auto;
+}
+.header {
+  background-color: #2d303a;
+}
+.logo__text {
+  color: #ffffff;
+}
+.logo__star {
+  color: #f06c64;
+}
+.menu__item {
+  color: #ffffff;
+}
+.menu__item_colored {
+  color: #f06c64;
+}
+.slider {
+  background-color: #f06c64;
+}
+.services {
+  background-color: #f2f2f2;
+}
+.services__h1,
+.cell__h2 {
+  color: #666d89;
+}
+.services__lead-text,
+.cell__text {
+  color: #767e9e;
+}
