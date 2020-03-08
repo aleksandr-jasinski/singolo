@@ -135,3 +135,17 @@
 .contact-info__email:hover {
   text-decoration: underline;
 }
+
+.footer {
+  height: 76px;
+
+  background-color: #2d303a;
+}
+.copy {
+  position: relative;
+  top: 25px;
+
+  padding-left: 40px;
+
+  color: #666d89;
+}
