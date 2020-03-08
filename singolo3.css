@@ -3,3 +3,135 @@
 /**
  * Singolo3 style starts here
  */
+.get-quote {
+  height: 568px;
+  padding: 40px;
+
+  background-color: #f06c64;
+  border-bottom: 6px solid #ea676b;
+}
+.get-quote__h1 {
+  padding-top: 8px;
+
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 18px;
+  font-family: "Lato";
+  text-align: left;
+  color: #f0d8d9;
+  letter-spacing: -0.2px;
+}
+.get-quote__p {
+  padding-top: 6px;
+
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Lato";
+  text-align: left;
+  color: #f0d8d9;
+}
+.get-quote__p_span {
+  word-spacing: 1.1px;
+}
+.get-quote__form-contact {
+  display: flex;
+}
+.get-quote__form-wrapper {
+  width: 620px;
+}
+.form__name {
+  margin-top: 27px;
+}
+
+.form__name,
+.form__email,
+.form__subject,
+.form__message {
+  padding-left: 15px;
+
+  background-color: #d6564f;
+  border: 0;
+  border-radius: 5px;
+}
+.form__name::placeholder,
+.form__email::placeholder,
+.form__subject::placeholder,
+.form__message::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  font-family: "Lato";
+  text-align: left;
+  color: #f48c8f;
+}
+
+.form__name,
+.form__email,
+.form__subject {
+  width: 604px;
+  height: 36px;
+  margin-bottom: 16px;
+}
+.form__message {
+  width: 602px;
+  height: 198px;
+}
+.form__submit {
+  width: 198px ;
+  height: 35px;
+  margin-top: 16px;
+
+  background-color: #d6564f;
+  border: 0;
+  border-radius: 5px;
+}
+
+.get-quote__contact-info {
+  width: 300px;
+  height: 200px;
+  margin-left: 20px;
+}
+.contact-info__h2 {
+  padding-top: 12px;
+
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "Lato";
+  text-align: left;
+  color: #f0d8d9;
+  text-transform: capitalize;
+  letter-spacing: -0.1px;
+}
+.contact-info__p {
+  margin-top: -5px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  font-family: "Lato";
+  text-align: left;
+  color: #f0d8d9;
+  word-spacing: -0.1px;
+}
+.contact-info__location,
+.contact-info__phone,
+.contact-info__email {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  font-family: "Lato";
+  text-align: left;
+  color: #f0d8d9;
+}
+.contact-info__phone,
+.contact-info__email {
+  text-decoration: none;
+
+  cursor: pointer;
+}
+.contact-info__phone:hover,
+.contact-info__email:hover {
+  text-decoration: underline;
+}
