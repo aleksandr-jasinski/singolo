@@ -73,6 +73,9 @@
   height: 36px;
   margin-bottom: 16px;
 }
+textarea {
+  resize: none;
+}
 .form__message {
   width: 602px;
   height: 198px;
@@ -82,13 +85,18 @@
   height: 35px;
   margin-top: 16px;
 
+  color: #f0d8d9;
+
   background-color: #d6564f;
   border: 0;
   border-radius: 5px;
 }
+.form__submit:hover {
+  cursor: pointer;
+}
 
 .get-quote__contact-info {
-  width: 300px;
+  width: 304px;
   height: 200px;
   margin-left: 20px;
 }
@@ -109,9 +117,10 @@
 
   font-weight: 400;
   font-size: 12px;
-  line-height: 22px;
+  line-height: 21px;
   font-family: "Lato";
   text-align: left;
+  text-align: justify;
   color: #f0d8d9;
   word-spacing: -0.1px;
 }
@@ -125,6 +134,13 @@
   text-align: left;
   color: #f0d8d9;
 }
+.contact-info__location {
+  position: relative;
+  top: 12px;
+  left: 24px;
+
+  font-style: normal;
+}
 .contact-info__phone,
 .contact-info__email {
   text-decoration: none;
@@ -135,17 +151,36 @@
 .contact-info__email:hover {
   text-decoration: underline;
 }
+.contact-info__phone {
+  position: relative;
+  left: 24px;
+}
+.contact-info__email {
+  position: relative;
+  left: 24px;
+}
 
 .footer {
+  display: flex;
+  justify-content: space-between;
   height: 76px;
 
   background-color: #2d303a;
 }
-.copy {
-  position: relative;
-  top: 25px;
-
-  padding-left: 40px;
-
+.footer__copy {
+  /*position: relative;
+  top: 25px;*/
+  padding-top: 27px;
+  padding-left: 42px;
+}
+.footer__copy-text {
+  font-weight: 300;
+  font-size: 12px;
+  font-family: "Lato";
   color: #666d89;
+  letter-spacing: -0.1px;
+}
+.footer__icons {
+  padding-top: 21px;
+  padding-right: 43px;
 }
