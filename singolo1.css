@@ -431,6 +431,7 @@ template {
   left: -5px;
 }
 .menu__item:hover {
+  color: #f06c64;
   text-decoration: underline;
 
   cursor: pointer;
@@ -438,12 +439,65 @@ template {
 .menu__item_colored {
   color: #f06c64;
 }
+.menu__item_colored:hover {
+  color: #ffffff;
+}
 
 .slider {
-  height: 600px;
+  height: 585px;
+  padding-right: 40px;
+  padding-left: 40px;
 
   background-color: #f06c64;
+  border-bottom: 15px solid #ea676b;
 }
+.slider__btn-left,
+.slider__btn-right {
+  display: inline-block;
+  width: 60px;
+  height: 585px;
+}
+.slider__center {
+  display: inline-block;
+  width: 820px;
+  height: 585px;
+}
+.slider__btn-left,
+.slider__center,
+.slider__btn-right {
+  float: left;
+}
+
+
+
+.phone_vertical {
+  position: relative;
+  top: 45px;
+  left: 10px;
+}
+.phone_horizontal {
+  position: relative;
+  top: -76px;
+  left: 62px;
+}
+
+.slider__btn-left span,
+.slider__btn-right span {
+  display: inline-block;
+  padding-top: 265px;
+
+  font-size: 48px;
+  color: #c94549;
+}
+
+.slider__btn-right span {
+  position: relative;
+  left: 37px;
+}
+
+
+
+
 .services {
   height: 495px;
 
