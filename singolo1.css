@@ -361,7 +361,6 @@ template {
 /**
  * Singolo style starts here
  */
-@import url("./assets/fonts/fonts.css");
 
 .body {
   font-family: "Lato", Verdana, Arial, Helvetica, sans-serif;
@@ -373,22 +372,27 @@ template {
   margin: 0 auto;
 }
 .header {
+  display: flex;
+  justify-content: space-between;
   height: 89px;
   margin-top: 0;
   margin-bottom: 0;
 
   background-color: #2d303a;
+  border-bottom: 6px solid #323746;
 }
+
 .logo {
   display: inline-block;
-  margin-top: 5px;
+  margin-top: 4px;
   margin-left: 40px;
 
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
 }
 .logo__text {
   font-weight: 700;
   font-size: 25px;
+  line-height: 30px;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -396,11 +400,8 @@ template {
   color: #f06c64;
 }
 .menu {
-  position: relative;
-  top: 25px;
-  right: 40px;
-
-  float: right;
+  margin-top: 38px;
+  padding-right: 40px;
 }
 .menu__item {
   display: inline-block;
@@ -410,29 +411,101 @@ template {
   font-size: 12px;
   color: #ffffff;
   text-transform: uppercase;
-  letter-spacing: 0.1px;
+  text-decoration: none;
+  letter-spacing: -0.1px;
+}
+.menu__item_home {
+  position: relative;
+  left: -25px;
+}
+.menu__item_services {
+  position: relative;
+  left: -18px;
+}
+.menu__item_portfolio {
+  position: relative;
+  left: -11px;
+}
+.menu__item_about {
+  position: relative;
+  left: -5px;
+}
+.menu__item:hover {
+  color: #f06c64;
+  text-decoration: underline;
+
+  cursor: pointer;
 }
 .menu__item_colored {
   color: #f06c64;
 }
-.header__underline {
-  height: 6px;
-
-  background-color: #323746;
+.menu__item_colored:hover {
+  color: #ffffff;
 }
+
 .slider {
-  height: 600px;
+  height: 585px;
+  padding-right: 40px;
+  padding-left: 40px;
 
   background-color: #f06c64;
+  border-bottom: 15px solid #ea676b;
 }
+.slider__btn-left,
+.slider__btn-right {
+  display: inline-block;
+  width: 60px;
+  height: 585px;
+}
+.slider__center {
+  display: inline-block;
+  width: 820px;
+  height: 585px;
+}
+.slider__btn-left,
+.slider__center,
+.slider__btn-right {
+  float: left;
+}
+
+
+
+.phone_vertical {
+  position: relative;
+  top: 45px;
+  left: 10px;
+}
+.phone_horizontal {
+  position: relative;
+  top: -76px;
+  left: 62px;
+}
+
+.slider__btn-left span,
+.slider__btn-right span {
+  display: inline-block;
+  padding-top: 265px;
+
+  font-size: 48px;
+  color: #c94549;
+}
+
+.slider__btn-right span {
+  position: relative;
+  left: 37px;
+}
+
+
+
+
 .services {
-  height: 495px;
+  height: 409px;
+  padding: 40px 20px 40px 40px;
 
   background-color: #f2f2f2;
+  border-bottom: 6px solid #ffffff;
 }
-.services__wrapper {
-  margin-left: 40px;
-}
+
 .services__h1,
 .cell__h2 {
   font-weight: 900;
@@ -440,13 +513,13 @@ template {
 }
 .services__h1 {
   margin-top: 0;
-  padding-top: 0;
+  margin-bottom: 24px;
+  padding-top: 20px;
 
   font-size: 30px;
+  letter-spacing: -0.1px;
 }
-.cell__h2 {
-  font-size: 18px;
-}
+
 .services__lead-text,
 .cell__text {
   color: #767e9e;
@@ -454,12 +527,78 @@ template {
 .services__lead-text {
   font-weight: 300;
   font-size: 18px;
+  word-spacing: 1px;
+}
+.services__lead-text_2nd-line {
+  position: relative;
+  top: 10px;
+
+  word-spacing: 2px;
+}
+.services__block {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.cell {
+  width: 300px;
+  height: 123px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+.cell__h2 {
+  margin-bottom: -1px;
+  padding-top: 26px;
+  padding-left: 80px;
+
+  font-size: 18px;
+  letter-spacing: -0.1px;
+}
+.cell-13 .cell__h2,
+.cell-23 .cell__h2 {
+  padding-left: 81px;
 }
 .cell__text {
+  padding-left: 80px;
+
   font-weight: 400;
   font-size: 12px;
+  line-height: 1.75em;
+  word-spacing: -1px;
 }
-.cell__icon {
-  width: 57px;
-  height: 57px;
+.cell-11 {
+  background-image: url(/assets/imgs/pen.png);
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: 43px;
+}
+.cell-12 {
+  background-image: url(/assets/imgs/bulb.png);
+  background-repeat: no-repeat;
+  background-position-x: -1px;
+  background-position-y: 43px;
+}
+.cell-13 {
+  background-image: url(/assets/imgs/heart.png);
+  background-repeat: no-repeat;
+  background-position-x: -1px;
+  background-position-y: 43px;
+}
+.cell-21 {
+  background-image: url(/assets/imgs/phone.png);
+  background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: 43px;
+}
+.cell-22 {
+  background-image: url(/assets/imgs/bubble.png);
+  background-repeat: no-repeat;
+  background-position-x: -1px;
+  background-position-y: 43px;
+}
+.cell-23 {
+  background-image: url(/assets/imgs/star.png);
+  background-repeat: no-repeat;
+  background-position-x: -1px;
+  background-position-y: 43px;
 }
