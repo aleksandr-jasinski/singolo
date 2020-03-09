@@ -377,17 +377,20 @@ template {
   margin-bottom: 0;
 
   background-color: #2d303a;
+  border-bottom: 6px solid #323746;
 }
+
 .logo {
   display: inline-block;
-  margin-top: 5px;
+  margin-top: 4px;
   margin-left: 40px;
 
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
 }
 .logo__text {
   font-weight: 700;
   font-size: 25px;
+  line-height: 30px;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -396,7 +399,7 @@ template {
 }
 .menu {
   position: relative;
-  top: 25px;
+  top: 23px;
   right: 40px;
 
   float: right;
@@ -414,11 +417,7 @@ template {
 .menu__item_colored {
   color: #f06c64;
 }
-.header__underline {
-  height: 6px;
 
-  background-color: #323746;
-}
 .slider {
   height: 600px;
 
