@@ -1,2 +1,2 @@
 # singolo
-Домашнее задание: Singolo. Part 1
+Домашнее задание: Singolo
