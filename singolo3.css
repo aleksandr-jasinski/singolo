@@ -5,13 +5,14 @@
  */
 .get-quote {
   height: 568px;
-  padding: 40px;
+  padding: 40px 39px 40px 40px;
 
   background-color: #f06c64;
   border-bottom: 6px solid #ea676b;
 }
 .get-quote__h1 {
   padding-top: 8px;
+  padding-left: 0;
 
   font-weight: 900;
   font-size: 30px;
@@ -19,10 +20,11 @@
   font-family: "Lato";
   text-align: left;
   color: #f0d8d9;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.1px;
 }
 .get-quote__p {
   padding-top: 6px;
+  padding-left: 0;
 
   font-weight: 300;
   font-size: 18px;
@@ -58,12 +60,26 @@
 .form__email::placeholder,
 .form__subject::placeholder,
 .form__message::placeholder {
+  position: relative;
+
   font-weight: 400;
   font-size: 12px;
   line-height: 22px;
   font-family: "Lato";
   text-align: left;
   color: #f48c8f;
+}
+.form__name::placeholder {
+  top: -2px;
+}
+.form__email::placeholder {
+  top: -2px;
+}
+.form__subject::placeholder {
+  top: -2px;
+}
+.form__message::placeholder {
+  top: 5px;
 }
 
 .form__name,
@@ -73,6 +89,7 @@
   height: 36px;
   margin-bottom: 16px;
 }
+
 textarea {
   resize: none;
 }
@@ -122,21 +139,25 @@ textarea {
   text-align: left;
   text-align: justify;
   color: #f0d8d9;
-  word-spacing: -0.1px;
+  word-spacing: -1px;
+}
+.contact-info__p_span {
+  line-height: 22px;
+  word-spacing: 0;
 }
 .contact-info__location,
 .contact-info__phone,
 .contact-info__email {
   font-weight: 400;
   font-size: 12px;
-  line-height: 22px;
+  line-height: 20px;
   font-family: "Lato";
   text-align: left;
   color: #f0d8d9;
 }
 .contact-info__location {
   position: relative;
-  top: 12px;
+  top: 11px;
   left: 24px;
 
   font-style: normal;
@@ -181,6 +202,51 @@ textarea {
   letter-spacing: -0.1px;
 }
 .footer__icons {
-  padding-top: 21px;
-  padding-right: 43px;
+  position: relative;
+  top: 1px;
+  left: -4px;
+
+  padding-top: 20px;
+  padding-right: 40px;
+}
+.footer__icons a:hover {
+  cursor: pointer;
+}
+.icons__fb-footer {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+
+  background-image: url(./assets/imgs/Facebook.png);
+}
+
+.icons__g-footer {
+  position: relative;
+  left: 2px;
+
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+
+  background-image: url(./assets/imgs/Google.png);
+}
+.icons__tw-footer {
+  position: relative;
+  left: 4px;
+
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+
+  background-image: url(./assets/imgs/Twitter.png);
+}
+.icons__in-footer {
+  position: relative;
+  left: 6px;
+
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+
+  background-image: url(./assets/imgs/LinkedIn.png);
 }
