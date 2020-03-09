@@ -6,10 +6,274 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Singolo</title>
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="body">
+  <header class="header wrapper" id="home">
+    <div class="logo">
+      <p class="logo__text">Singolo<span class="logo__star">*</span></p>
+    </div>
+    <nav class="menu">
+
+      <a href="#home" class="menu__item menu__item_home menu__item_colored">home</a>
+      <a href="#services" class="menu__item menu__item_services">services</a>
+      <a href="#portfolio" class="menu__item menu__item_portfolio">portfolio</a>
+      <a href="#about" class="menu__item menu__item_about">about</a>
+      <a href="#contact" class="menu__item menu__item_contact">contact</a>
+
+    </nav>
+
+
+  </header>
+
+  <main class="main wrapper">
+    <section class="slider">
+
+      <div class="slider__btn-left">
+        <span>&lt;</span>
+      </div>
+
+      <div class="slider__center">
+        <img class="phone phone_vertical" src="./assets/imgs/iphone-vertical.png" alt="phone image vertical">
+        <img class="phone phone_horizontal" src="./assets/imgs/iphone-horizontal.png" alt="phone image horizontal">
+      </div>
+
+      <div class="slider__btn-right">
+        <span>&gt;</span>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="services__wrapper">
+        <h1 class="services__h1">Our Services</h1>
+        <p class="services__lead-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis,
+          non commodo luctus, nisi erat porttitor <span class="services__lead-text_2nd-line">ligula, eget lacinia odio
+            sem nec elit. Fusce dapibus, tellus ac
+            cursus
+            commodo, tortor mauris condimentum nibh.</span></p>
+
+        <div class="services__block">
+          <div class="cell cell-11">
+
+            <h2 class="cell__h2">Custom Design</h2>
+            <p class="cell__text">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra
+              lacus
+              ut, ultrices velit.</p>
+          </div>
+          <div class="cell cell-12">
+
+            <h2 class="cell__h2">Inovative Ideas </h2>
+            <p class="cell__text">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum
+              tellus
+              dolor id lorem.</p>
+          </div>
+          <div class="cell cell-13">
+
+            <h2 class="cell__h2">Love Is The Answer </h2>
+            <p class="cell__text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.
+              Quisque condimentum.</p>
+          </div>
+          <div class="cell cell-21">
+
+            <h2 class="cell__h2">Responsive Layout </h2>
+            <p class="cell__text">Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas blandit nunc ligula.
+              Praesent elit leo.</p>
+          </div>
+          <div class="cell cell-22">
+
+            <h2 class="cell__h2">24 / 7 Support </h2>
+            <p class="cell__text">Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi. Nulla a sem erat.
+              Pellentesque egestas venenatis lorem .</p>
+          </div>
+          <div class="cell cell-23">
+
+            <h2 class="cell__h2">Feel Like A Star </h2>
+            <p class="cell__text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam
+              tellus.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h1 class="portfolio__h1">Portfolio</h1>
+      <p class="portfolio__p">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
+        elit.</p>
+      <nav class="portfolio-nav">
+        <ul class="portfolio-nav__list">
+          <li class="portfolio-nav__list-item portfolio-nav__list-item-1 portfolio-nav__list-item_active">
+            all
+          </li>
+          <li class="portfolio-nav__list-item portfolio-nav__list-item-2">
+            web design
+          </li>
+          <li class="portfolio-nav__list-item portfolio-nav__list-item-3">
+            graphic gesign
+          </li>
+          <li class="portfolio-nav__list-item portfolio-nav__list-item-4">
+            artwork
+          </li>
+        </ul>
+      </nav>
+      <div class="gallery">
+        <div class="gallery__placeholder gallery__img-11">
+        </div>
+        <div class="gallery__placeholder gallery__img-12">
+        </div>
+        <div class="gallery__placeholder gallery__img-13">
+        </div>
+        <div class="gallery__placeholder gallery__img-14">
+        </div>
+        <div class="gallery__placeholder gallery__img-21">
+        </div>
+        <div class="gallery__placeholder gallery__img-22">
+        </div>
+        <div class="gallery__placeholder gallery__img-23">
+        </div>
+        <div class="gallery__placeholder gallery__img-24">
+        </div>
+        <div class="gallery__placeholder gallery__img-31">
+        </div>
+        <div class="gallery__placeholder gallery__img-32">
+        </div>
+        <div class="gallery__placeholder gallery__img-33">
+        </div>
+        <div class="gallery__placeholder gallery__img-34">
+        </div>
+
+
+        <div class="gallery__placeholder gallery__img-21">
+        </div>
+        <div class="gallery__placeholder gallery__img-22">
+        </div>
+        <div class="gallery__placeholder gallery__img-23">
+        </div>
+        <div class="gallery__placeholder gallery__img-24">
+        </div>
+
+
+
+      </div><!-- end gallery-->
+
+
+    </section>
+
+    <section class="about-us" id="about">
+      <h1 class="about-us__h1">
+        about us
+      </h1>
+      <p class="about-us__p">
+        Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat
+        porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+        condimentum nibh.
+      </p>
+      <div class="about-us__photos">
+        <div class="photos__photo photo-adam">
+          <img src="./assets/imgs/adam.png" alt="Adam Jensen" width="300" height="300">
+          <h2 class="photo__h2">
+            Adam Jensen
+          </h2>
+          <p class="photo__p">
+            Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.
+          </p>
+          <div class="photo__icons">
+            <a href="#" class="icons__fb"></a>
+            <a href="#" class="icons__g"></a>
+            <a href="#" class="icons__tw"></a>
+            <a href="#" class="icons__in"></a>
+          </div>
+        </div>
+
+        <div class="photos__photo photo-desmond">
+          <img src="./assets/imgs/desmond.png" alt="Desmond Miles" width="300" height="300">
+          <h2 class="photo__h2">
+            Desmond Miles
+          </h2>
+          <p class="photo__p">
+            Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.
+          </p>
+          <div class="photo__icons">
+            <a href="#" class="icons__fb"></a>
+            <a href="#" class="icons__g"></a>
+            <a href="#" class="icons__tw"></a>
+            <a href="#" class="icons__in"></a>
+          </div>
+        </div>
+
+        <div class="photos__photo photo-scolara">
+          <img src="./assets/imgs/scolara.png" alt="Scolara Visari" width="300" height="300">
+          <h2 class="photo__h2">
+            Scolara Visari
+          </h2>
+          <p class="photo__p">
+            Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.
+          </p>
+          <div class="photo__icons">
+            <a href="#" class="icons__fb"></a>
+            <a href="#" class="icons__g"></a>
+            <a href="#" class="icons__tw"></a>
+            <a href="#" class="icons__in"></a>
+          </div>
+        </div>
+
+      </div><!-- end of about-us__photos-->
+
+    </section>
+
+    <section class="get-quote" id="contact">
+      <h1 class="get-quote__h1">Get a Quote</h1>
+      <p class="get-quote__p"><span class="get-quote__p_span">Fusce dapibus, tellus ac cursus commodo, tortor mauris
+          condimentum. Duis mollis, non
+          commodo
+          luctus, nisi erat porttitor </span>ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus
+        commodo,
+        tortor mauris condimentum nibh.</p>
+      <div class="get-quote__form-contact">
+        <div class="get-quote__form-wrapper">
+          <form class="get-quote__form" id="get-quote" name="get-quote" action="/">
+            <input type="text" class="form__name" id="name" name="name" placeholder="Name (Required)"
+              pattern="[A-Za-z]{2,50}" required><br>
+            <input type="email" class="form__email" id="email" name="email" placeholder="Email (Required)"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 5}$" required> <br>
+            <input type="text" class="form__subject" id="subject" name="subject" placeholder="Subject"><br>
+            <textarea class="form__message" id="message" name="message"
+              placeholder="Describe your project in detail..."></textarea><br>
+
+            <input class="form__submit" type="submit" value="Submit">
+
+          </form>
+        </div>
+        <div class="get-quote__contact-info">
+          <h2 class="contact-info__h2">contact information</h2>
+          <p class="contact-info__p">Quisque hendrerit purus dapibus, ornare nibh vitae, viver- ra nibh. Fusce vitae
+            aliquam tellus. Proin sit amet volutpat <span class="contact-info__p_span">libero. Nulla sed nunc et tortor
+              luctus faucibus. Morbi at aliquet
+              turpis, et consequat felis.</span>
+          </p>
+          <address>
+            <p class="contact-info__location">Elm St. 14/05 Lost City </p>
+            <a class="contact-info__phone" href="tel:035283318635"> 03528 331 86 35 </a> <br>
+            <a class=" contact-info__email" href="mailto:info@singolo.com">info@singolo.com </a>
+          </address>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrapper">
+    <div class="footer__copy">
+      <span class="footer__copy-text">&copy; Copyright 2013</span>
+    </div>
+    <div class="footer__icons">
+      <a href="#" class="icons__fb-footer"></a>
+      <a href="#" class="icons__g-footer"></a>
+      <a href="#" class="icons__tw-footer"></a>
+      <a href="#" class="icons__in-footer"></a>
+    </div>
+  </footer>
 
 </body>
 
