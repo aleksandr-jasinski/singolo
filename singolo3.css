@@ -148,6 +148,7 @@ textarea {
 .contact-info__location,
 .contact-info__phone,
 .contact-info__email {
+  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 20px;
@@ -158,9 +159,14 @@ textarea {
 .contact-info__location {
   position: relative;
   top: 11px;
-  left: 24px;
+  left: 0;
 
-  font-style: normal;
+  padding-left: 24px;
+
+  background-image: url(./assets/imgs/location.png);
+  background-repeat: no-repeat;
+  background-position-x: 4px;
+  background-position-y: 4px;
 }
 .contact-info__phone,
 .contact-info__email {
@@ -174,11 +180,26 @@ textarea {
 }
 .contact-info__phone {
   position: relative;
-  left: 24px;
+  top: -1px;
+  left: 0x;
+
+  padding-left: 24px;
+
+  background-image: url(./assets/imgs/phone.png);
+  background-repeat: no-repeat;
+  background-position-x: 2px;
+  background-position-y: 2px;
 }
 .contact-info__email {
   position: relative;
-  left: 24px;
+  left: 0;
+
+  padding-left: 24px;
+
+  background-image: url(./assets/imgs/mail.png);
+  background-repeat: no-repeat;
+  background-position-x: 1px;
+  background-position-y: 5px;
 }
 
 .footer {
