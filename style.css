@@ -571,37 +571,37 @@ template {
   word-spacing: -1px;
 }
 .cell-11 {
-  background-image: url(/assets/imgs/pen.png);
+  background-image: url(./assets/imgs/pen.png);
   background-repeat: no-repeat;
   background-position-x: 0;
   background-position-y: 43px;
 }
 .cell-12 {
-  background-image: url(/assets/imgs/bulb.png);
+  background-image: url(./assets/imgs/bulb.png);
   background-repeat: no-repeat;
   background-position-x: -1px;
   background-position-y: 43px;
 }
 .cell-13 {
-  background-image: url(/assets/imgs/heart.png);
+  background-image: url(./assets/imgs/heart.png);
   background-repeat: no-repeat;
   background-position-x: -1px;
   background-position-y: 43px;
 }
 .cell-21 {
-  background-image: url(/assets/imgs/smartphone.png);
+  background-image: url(./assets/imgs/smartphone.png);
   background-repeat: no-repeat;
   background-position-x: 0;
   background-position-y: 43px;
 }
 .cell-22 {
-  background-image: url(/assets/imgs/bubble.png);
+  background-image: url(./assets/imgs/bubble.png);
   background-repeat: no-repeat;
   background-position-x: -1px;
   background-position-y: 43px;
 }
 .cell-23 {
-  background-image: url(/assets/imgs/star.png);
+  background-image: url(./assets/imgs/star.png);
   background-repeat: no-repeat;
   background-position-x: -1px;
   background-position-y: 43px;
