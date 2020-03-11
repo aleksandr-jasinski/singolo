@@ -531,6 +531,7 @@ template {
 .services__lead-text {
   font-weight: 300;
   font-size: 18px;
+  text-align: justify;
   word-spacing: 1px;
 }
 .services__lead-text_2nd-line {
@@ -568,6 +569,7 @@ template {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.75em;
+  text-align: justify;
   word-spacing: -1px;
 }
 .cell-11 {
@@ -808,7 +810,7 @@ ul {
   font-size: 18px;
   line-height: 30px;
   font-family: "Lato";
-  text-align: left;
+  text-align: justify;
   color: #767e9e;
   letter-spacing: -0.05px;
   word-spacing: 1px;
@@ -858,7 +860,7 @@ ul {
   font-size: 12px;
   line-height: 22px;
   font-family: "Lato";
-  text-align: left;
+  text-align: justify;
   color: #767e9e;
   letter-spacing: -0.1px;
   word-spacing: 0;
@@ -941,7 +943,7 @@ ul {
   font-size: 18px;
   line-height: 30px;
   font-family: "Lato";
-  text-align: left;
+  text-align: justify;
   color: #f0d8d9;
 }
 .get-quote__p_span {
@@ -1047,7 +1049,6 @@ textarea {
   font-size: 12px;
   line-height: 21px;
   font-family: "Lato";
-  text-align: left;
   text-align: justify;
   color: #f0d8d9;
   word-spacing: -1px;
