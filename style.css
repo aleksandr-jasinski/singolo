@@ -365,7 +365,7 @@ template {
 .body {
   font-family: "Lato", Verdana, Arial, Helvetica, sans-serif;
 
-  background-color: #000000;
+  background-color: #ffffff;
 }
 .wrapper {
   width: 1020px;
@@ -445,8 +445,8 @@ template {
 
 .slider {
   height: 585px;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 0;
+  padding-left: 0;
 
   background-color: #f06c64;
   border-bottom: 15px solid #ea676b;
@@ -454,7 +454,7 @@ template {
 .slider__btn-left,
 .slider__btn-right {
   display: inline-block;
-  width: 60px;
+  width: 100px;
   height: 585px;
 }
 .slider__center {
@@ -472,6 +472,12 @@ template {
   cursor: pointer;
 }
 
+.slider__btn-left {
+  background: url(./assets/imgs/arrow-left.png) no-repeat 50% 50.3%;
+}
+.slider__btn-right {
+  background: url(./assets/imgs/arrow-right.png) no-repeat 52% 50.3%;
+}
 
 .phone_vertical {
   position: relative;
@@ -483,25 +489,6 @@ template {
   top: -76px;
   left: 62px;
 }
-
-.slider__btn-left span,
-.slider__btn-right span {
-  display: inline-block;
-  padding-top: 265px;
-
-  font-size: 48px;
-  color: #c94549;
-  font-stretch: ultra-condensed;
-}
-
-.slider__btn-right span {
-  position: relative;
-  left: 37px;
-}
-
-
-
-
 .services {
   height: 409px;
   padding: 40px 20px 40px 40px;
@@ -621,7 +608,7 @@ template {
 
 .portfolio {
   position: relative;
-  top: 4px;
+  top: 0; /* 4px; */
 
   height: 784px;
   margin-top: 0;
@@ -779,7 +766,7 @@ ul {
 }
 .about-us {
   position: relative;
-  top: 4px;
+  top: 0; /*4px;*/
 
   height: 642px;
   padding: 40px 20px 40px 40px;
@@ -920,13 +907,13 @@ ul {
  */
 .get-quote {
   position: relative;
-  top: 10px;
+  top: 0; /*10px*/
 
   height: 568px;
   padding: 40px 39px 40px 40px;
 
   background-color: #f06c64;
-  border-bottom: 6px solid #ea676b;
+  border-bottom: 6px solid #ea676b;;
 }
 .get-quote__h1 {
   padding-top: 8px;
