@@ -531,6 +531,7 @@ template {
 .services__lead-text {
   font-weight: 300;
   font-size: 18px;
+  text-align: justify;
   word-spacing: 1px;
 }
 .services__lead-text_2nd-line {
@@ -568,40 +569,42 @@ template {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.75em;
+  text-align: justify;
   word-spacing: -1px;
+  text-overflow: clip;
 }
 .cell-11 {
-  background-image: url(/assets/imgs/pen.png);
+  background-image: url(./assets/imgs/pen.png);
   background-repeat: no-repeat;
   background-position-x: 0;
   background-position-y: 43px;
 }
 .cell-12 {
-  background-image: url(/assets/imgs/bulb.png);
+  background-image: url(./assets/imgs/bulb.png);
   background-repeat: no-repeat;
   background-position-x: -1px;
   background-position-y: 43px;
 }
 .cell-13 {
-  background-image: url(/assets/imgs/heart.png);
+  background-image: url(./assets/imgs/heart.png);
   background-repeat: no-repeat;
   background-position-x: -1px;
   background-position-y: 43px;
 }
 .cell-21 {
-  background-image: url(/assets/imgs/smartphone.png);
+  background-image: url(./assets/imgs/smartphone.png);
   background-repeat: no-repeat;
   background-position-x: 0;
   background-position-y: 43px;
 }
 .cell-22 {
-  background-image: url(/assets/imgs/bubble.png);
+  background-image: url(./assets/imgs/bubble.png);
   background-repeat: no-repeat;
   background-position-x: -1px;
   background-position-y: 43px;
 }
 .cell-23 {
-  background-image: url(/assets/imgs/star.png);
+  background-image: url(./assets/imgs/star.png);
   background-repeat: no-repeat;
   background-position-x: -1px;
   background-position-y: 43px;
@@ -808,7 +811,7 @@ ul {
   font-size: 18px;
   line-height: 30px;
   font-family: "Lato";
-  text-align: left;
+  text-align: justify;
   color: #767e9e;
   letter-spacing: -0.05px;
   word-spacing: 1px;
@@ -818,11 +821,14 @@ ul {
   top: 33.5px;
 
   display: flex;
-  flex-wrap: row;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .photos__photo {
+  width: 300px;
+  height: 450px;
   padding-right: 20px;
+  overflow: hidden;
 }
 .photo-desmond {
   position: relative;
@@ -849,6 +855,7 @@ ul {
   text-align: left;
   color: #666d89;
   letter-spacing: -0.1px;
+  text-overflow: ellipsis;
 }
 .photo__p {
   width: 300px;
@@ -858,7 +865,7 @@ ul {
   font-size: 12px;
   line-height: 22px;
   font-family: "Lato";
-  text-align: left;
+  text-align: justify;
   color: #767e9e;
   letter-spacing: -0.1px;
   word-spacing: 0;
@@ -941,7 +948,7 @@ ul {
   font-size: 18px;
   line-height: 30px;
   font-family: "Lato";
-  text-align: left;
+  text-align: justify;
   color: #f0d8d9;
 }
 .get-quote__p_span {
@@ -1047,7 +1054,6 @@ textarea {
   font-size: 12px;
   line-height: 21px;
   font-family: "Lato";
-  text-align: left;
   text-align: justify;
   color: #f0d8d9;
   word-spacing: -1px;
