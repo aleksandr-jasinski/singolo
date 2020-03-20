@@ -363,20 +363,26 @@ template {
  */
 
 .body {
+  width: 100%;
+
   font-family: "Lato", Verdana, Arial, Helvetica, sans-serif;
 
-  background-color: #ffffff;
+  background-color: #000000;
 }
 .wrapper {
   width: 1020px;
   margin: 0 auto;
 }
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
   display: flex;
   justify-content: space-between;
+  width: 1020px;
   height: 89px;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 auto;
 
   background-color: #2d303a;
   border-bottom: 6px solid #323746;
@@ -1108,7 +1114,7 @@ textarea {
 
 .footer {
   position: relative;
-  top: 10px;
+  top: 0; /*10px;*/
 
   display: flex;
   justify-content: space-between;
