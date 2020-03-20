@@ -438,17 +438,15 @@ template {
 }
 .menu__item:hover {
   color: #f06c64;
-  text-decoration: underline;
 
   cursor: pointer;
 }
-.menu__item_colored {
+.menu__item_active {
   color: #f06c64;
 }
-.menu__item_colored:hover {
-  color: #ffffff;
+.main {
+  scroll-behavior: smooth;
 }
-
 .slider {
   height: 585px;
   padding-right: 0;
