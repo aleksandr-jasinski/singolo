@@ -4,7 +4,8 @@ const BTN_RIGHT = document.getElementsByClassName('slider__btn-right');
 const SLIDER1 = document.getElementById('slide1');
 const SLIDER2 = document.getElementById('slide2');
 
-const PORTFOLIO = document.getElementById('portfolio');
+const PORTFOLIO = document.getElementById('portfolio-nav');
+const GALLERY = document.getElementById('gallery');
 
 MENU.addEventListener('click', (event) => {
   MENU.querySelectorAll('a').forEach(el => el.classList.remove('menu__item_active'));
@@ -15,6 +16,13 @@ PORTFOLIO.addEventListener('click', (event) => {
   PORTFOLIO.querySelectorAll('nav > ul > li').forEach(el => el.classList.remove('portfolio-nav__list-item_active'));
   event.target.classList.add('portfolio-nav__list-item_active');
 })
+
+GALLERY.addEventListener('click', (event) => {
+  GALLERY.querySelectorAll('.gallery__placeholder').forEach(el => el.classList.remove('gallery__placeholder-active'));
+  event.target.classList.add('gallery__placeholder-active');
+})
+
+
 
 //shuffle
 /*
