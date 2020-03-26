@@ -748,6 +748,8 @@ template {
   border: none !important;
 }
 .gallery div:nth-child(n+13) {
+  display: none;
+
   visibility: hidden;
 }
 
@@ -1013,6 +1015,8 @@ template {
 .form__message {
   padding-left: 15px;
 
+  color: #000000;
+
   background-color: #d6564f;
   border: 0;
   border-radius: 5px;
@@ -1029,6 +1033,8 @@ template {
   font-family: "Lato";
   text-align: left;
   color: #f48c8f;
+
+  background-color: #d6564f;
 }
 .form__name::placeholder {
   top: -2px;
@@ -1054,6 +1060,13 @@ template {
 textarea {
   resize: none;
 }
+textarea:-internal-autofill-selected {
+  color: -internal-light-dark-color(black, white) !important;
+
+  background-color: rgb(232, 240, 254) !important;
+  background-image: none !important;
+}
+
 .form__message {
   width: 602px;
   height: 198px;
@@ -1236,4 +1249,31 @@ textarea {
   height: 35px;
 
   background-image: url(./assets/imgs/LinkedIn.png);
+}
+#message-block.hidden {
+  display: none;
+}
+#message-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.5);
+}
+#message {
+  position: absolute;
+  top: calc(50% - 400px/2);
+  left: calc(50% - 600px);
+  z-index: 100;
+
+  width: 600px;
+  height: 400px;
+
+  text-align: center;
+
+  background-color: #dedede;
+  border: 2px solid #000000;
 }

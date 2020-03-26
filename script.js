@@ -7,6 +7,9 @@ const SLIDER2 = document.getElementById('slide2');
 const PORTFOLIO = document.getElementById('portfolio-nav');
 const GALLERY = document.getElementById('gallery');
 
+const SUBMIT_BTN = document.getElementById('submit');
+const CLOSE_BTN = document.getElementById('close-btn');
+
 MENU.addEventListener('click', (event) => {
   MENU.querySelectorAll('a').forEach(el => el.classList.remove('menu__item_active'));
   event.target.classList.add('menu__item_active');
@@ -22,12 +25,36 @@ GALLERY.addEventListener('click', (event) => {
   event.target.classList.add('gallery__placeholder-active');
 })
 
+SUBMIT_BTN.addEventListener('click', () => {
+  const subject = document.getElementById('subject').value.toString();
+  if (subject == '') {
+    document.getElementById('result_subject').innerText = 'No subject';
+  }
+  else {
+    document.getElementById('result_subject').innerText = subject;
+  }
+  const message = document.getElementById('form__message').value.toString();
+  if (message == '') {
+    document.getElementById('result_message').innerText = 'No description';
+  }
+  else {
+    document.getElementById('result_message').innerText = message;
+  }
+
+  document.getElementById('message-block').classList.remove('hidden');
+})
+
+CLOSE_BTN.addEventListener('click', () => {
+  document.getElementById('result_subject').innerText = '';
+  document.getElementById('get-quote').reset();
+  document.getElementById('message-block').classList.add('hidden');
+})
 
 
 //shuffle
 /*
-var list = document.getElementsByClassName('gallery'),
-  button = document.getElementsByClassName('portfolio-nav__list-item');
+var list = document.getElementById('gallery'),
+    tab = document.getElementsByClassName('portfolio-nav__list-item');
 function shuffle(items) {
   var cached = items.slice(0), temp, i = cached.length, rand;
   while (--i) {
@@ -47,5 +74,5 @@ function shuffleNodes() {
     ++i;
   }
 }
-button.onclick = shuffleNodes;
+tab.onclick = shuffleNodes;
 */
