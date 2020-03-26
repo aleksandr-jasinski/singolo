@@ -694,9 +694,9 @@ ul {
   border-radius: 5px;
 }
 .portfolio-nav__list-item:hover {
-  color: #dedede;
+  color: #aeaeae;
 
-  border: 1px solid #dedede;
+  border: 1px solid #aeaeae;
   cursor: pointer;
 }
 .portfolio-nav__list-item_active {
@@ -705,10 +705,10 @@ ul {
   border: 1px solid #dedede;
 }
 .portfolio-nav__list-item_active:hover {
-  color: #767e9e;
+  color: #dedede;
 
-  border: 1px solid #767e9e;
-  cursor: pointer;
+  border: 1px solid #dedede;
+  cursor: default;
 }
 
 .portfolio-nav__list-item-1 {
@@ -748,6 +748,15 @@ ul {
 
   background-color: #464b5e;
 }
+
+.gallery__placeholder:hover {
+  cursor: pointer;
+}
+/*
+.gallery__placeholder-active {
+  border: 5px solid #f06c64;
+  border-style: inset;
+}*/
 
 .gallery__img-11 {
   background-image: url(./assets/imgs/11.png);
