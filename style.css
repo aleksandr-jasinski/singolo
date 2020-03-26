@@ -450,29 +450,35 @@ template {
 .slider {
   position: relative;
 
+  width: 1020px;
   height: 600px;
   padding-right: 0;
   padding-left: 0;
+  overflow: hidden;
 
   /*background-color: #f06c64;
    border-bottom: 6px solid #ea676b;*/
 }
-.slider__slide {
-  z-index: 10;
+.slider__wrapper {
+  display: flex;
 
-  float: left;
-  width: 1020px;
-  height: 600px;
+  transition: transform 0.6s ease;
 }
+@media (min-width: 980px) {
+  .slider__slide {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
 .slider__slide-hidden {
   display: none;
 }
-.slider__btn-left,
-.slider__btn-right {
+.slider__btn {
   position: absolute;
-  z-index: 100;
+  z-index: 10;
 
-  display: inline-block;
+  display: flex;
   width: 100px;
   height: 600px;
 }
