@@ -18,6 +18,17 @@ MENU.addEventListener('click', (event) => {
 PORTFOLIO.addEventListener('click', (event) => {
   PORTFOLIO.querySelectorAll('nav > ul > li').forEach(el => el.classList.remove('portfolio-nav__list-item_active'));
   event.target.classList.add('portfolio-nav__list-item_active');
+
+  let flexClass = GALLERY.className;
+  GALLERY.classList.remove(flexClass);
+  let flexClassList = ['gallery_flex-row', 'gallery_flex-row-reverse', 'gallery_flex-column', 'gallery_flex-column-reverse'];
+  let i = Math.round(Math.random() * 3);
+
+  while (flexClassList[i] == flexClass) {
+    i = Math.round(Math.random() * 3);
+  }
+  console.log(i);
+  GALLERY.classList.add(flexClassList[i]);
 })
 
 GALLERY.addEventListener('click', (event) => {
