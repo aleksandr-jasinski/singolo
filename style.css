@@ -1231,6 +1231,8 @@ textarea:-internal-autofill-selected {
   .portfolio-nav {
     position: relative;
     top: -5px;
+
+    margin-bottom: 15px;
   }
   .portfolio-nav__list {
     padding-left: 12px;
@@ -1516,8 +1518,9 @@ textarea:-internal-autofill-selected {
   .gallery_flex-row-reverse,
   .gallery_flex-column,
   .gallery_flex-column-reverse {
+    width: 960px;
     height: 621px;
-    margin-top: -8px;
+    margin-top: -14px;
     padding: 0;
   }
   .gallery__placeholder {
@@ -1534,6 +1537,9 @@ textarea:-internal-autofill-selected {
 
     padding-top: 8px;
   }
+  .about-us__p {
+    padding-right: 0;
+  }
   .about-us__photos {
     position: relative;
     top: 33.5px;
@@ -1548,7 +1554,10 @@ textarea:-internal-autofill-selected {
     width: 300px;
     height: 300px;
   }
-
+  .photo-adam {
+    position: relative;
+    left: 0;
+  }
   .photo-desmond {
     position: relative;
     left: -1px;
@@ -1563,6 +1572,7 @@ textarea:-internal-autofill-selected {
   }
   .photo__h2 {
     height: 18px;
+    margin-top: 14px;
 
     line-height: 18px;
   }
@@ -1573,6 +1583,7 @@ textarea:-internal-autofill-selected {
   .photo__icons {
     position: relative;
     top: 8px;
+    left: 0;
   }
   .get-quote {
     height: 568px;
@@ -1613,6 +1624,7 @@ textarea:-internal-autofill-selected {
   .get-quote__contact-info {
     width: 304px;
     height: 200px;
+    margin-top: 0;
     margin-left: 21px;
   }
   .contact-info__p {
@@ -1637,6 +1649,7 @@ textarea:-internal-autofill-selected {
 
   .contact-info__email {
     position: relative;
+    top: 0;
     left: -1px;
 
     padding-left: 24px;
