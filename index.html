@@ -10,13 +10,14 @@
 </head>
 
 <body class="body">
-  <header class="header wrapper" id="home">
+  <header class="header">
+    <div class="burger"></div>
     <div class="logo">
       <p class="logo__text">Singolo<span class="logo__star">*</span></p>
     </div>
-    <nav class="menu">
+    <nav class="menu" id="menu">
 
-      <a href="#home" class="menu__item menu__item_home menu__item_colored">home</a>
+      <a href="#home" class="menu__item menu__item_home menu__item_active">home</a>
       <a href="#services" class="menu__item menu__item_services">services</a>
       <a href="#portfolio" class="menu__item menu__item_portfolio">portfolio</a>
       <a href="#about" class="menu__item menu__item_about">about</a>
@@ -28,19 +29,22 @@
   </header>
 
   <main class="main wrapper">
-    <section class="slider">
+    <section class="slider" id="home">
+      <div class="slider__wrapper">
 
-      <div class="slider__btn-left">
-        <span>&lt;</span>
-      </div>
+        <div class="slider__btn slider__btn-left">
+        </div>
 
-      <div class="slider__center">
-        <img class="phone phone_vertical" src="./assets/imgs/iphone-vertical.png" alt="phone image vertical">
-        <img class="phone phone_horizontal" src="./assets/imgs/iphone-horizontal.png" alt="phone image horizontal">
-      </div>
+        <div class="slider__slide" id="slide1">
+          <img src="./assets/imgs/slide-1.png" alt="first slide">
+        </div>
 
-      <div class="slider__btn-right">
-        <span>&gt;</span>
+        <div class="slider__slide slider__slide-hidden" id="slide2">
+          <img src="./assets/imgs/slide-2.png" alt="second slide">
+        </div>
+
+        <div class="slider__btn slider__btn-right">
+        </div>
       </div>
     </section>
 
@@ -101,7 +105,7 @@
       <h1 class="portfolio__h1">Portfolio</h1>
       <p class="portfolio__p">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec
         elit.</p>
-      <nav class="portfolio-nav">
+      <nav class="portfolio-nav" id="portfolio-nav">
         <ul class="portfolio-nav__list">
           <li class="portfolio-nav__list-item portfolio-nav__list-item-1 portfolio-nav__list-item_active">
             all
@@ -117,7 +121,7 @@
           </li>
         </ul>
       </nav>
-      <div class="gallery">
+      <div class="gallery_flex-row" id="gallery">
         <div class="gallery__placeholder gallery__img-11">
         </div>
         <div class="gallery__placeholder gallery__img-12">
@@ -143,18 +147,6 @@
         <div class="gallery__placeholder gallery__img-34">
         </div>
 
-
-        <div class="gallery__placeholder gallery__img-21">
-        </div>
-        <div class="gallery__placeholder gallery__img-22">
-        </div>
-        <div class="gallery__placeholder gallery__img-23">
-        </div>
-        <div class="gallery__placeholder gallery__img-24">
-        </div>
-
-
-
       </div><!-- end gallery-->
 
 
@@ -171,7 +163,7 @@
       </p>
       <div class="about-us__photos">
         <div class="photos__photo photo-adam">
-          <img src="./assets/imgs/adam.png" alt="Adam Jensen" width="300" height="300">
+          <img src="./assets/imgs/adam.png" alt="Adam Jensen">
           <h2 class="photo__h2">
             Adam Jensen
           </h2>
@@ -187,7 +179,7 @@
         </div>
 
         <div class="photos__photo photo-desmond">
-          <img src="./assets/imgs/desmond.png" alt="Desmond Miles" width="300" height="300">
+          <img src="./assets/imgs/desmond.png" alt="Desmond Miles">
           <h2 class="photo__h2">
             Desmond Miles
           </h2>
@@ -203,7 +195,7 @@
         </div>
 
         <div class="photos__photo photo-scolara">
-          <img src="./assets/imgs/scolara.png" alt="Scolara Visari" width="300" height="300">
+          <img src="./assets/imgs/scolara.png" alt="Scolara Visari">
           <h2 class="photo__h2">
             Scolara Visari
           </h2>
@@ -232,19 +224,32 @@
         tortor mauris condimentum nibh.</p>
       <div class="get-quote__form-contact">
         <div class="get-quote__form-wrapper">
-          <form class="get-quote__form" id="get-quote" name="get-quote" action="/">
+          <form onsubmit="return false" class="get-quote__form" id="get-quote" name="get-quote" action="/">
             <input type="text" class="form__name" id="name" name="name" placeholder="Name (Required)"
               pattern="[A-Za-z]{2,50}" required><br>
             <input type="email" class="form__email" id="email" name="email" placeholder="Email (Required)"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 5}$" required> <br>
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required> <br>
             <input type="text" class="form__subject" id="subject" name="subject" placeholder="Subject"><br>
-            <textarea class="form__message" id="message" name="message"
+            <textarea class="form__message" id="form__message" name="form__message"
               placeholder="Describe your project in detail..."></textarea><br>
 
-            <input class="form__submit" type="submit" value="Submit">
-
+            <input class="form__submit" id="submit" type="submit" value="Submit">
           </form>
         </div>
+
+        <div class="hidden" id="message-block">
+          <div id="message">
+            <h2>The letter was sent</h2>
+            <p>
+              <b>Subject:</b> <span id="result_subject"></span>
+            </p>
+            <p><b>Description:</b> <span id="result_message"></span></p>
+            <br>
+            <button id="close-btn">OK</button>
+          </div>
+        </div>
+
+
         <div class="get-quote__contact-info">
           <h2 class="contact-info__h2">contact information</h2>
           <p class="contact-info__p">Quisque hendrerit purus dapibus, ornare nibh vitae, viver- ra nibh. Fusce vitae
@@ -275,6 +280,7 @@
     </div>
   </footer>
 
+  <script src="./script.js"></script>
 </body>
 
 </html>
