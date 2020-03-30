@@ -1232,9 +1232,10 @@ textarea:-internal-autofill-selected {
   .gallery_flex-column,
   .gallery_flex-column-reverse {
     width: 330px;
-    height: 846px;
+    height: 564px;
     margin-top: -4px;
     padding: 0;
+    overflow: hidden;
   }
   .gallery__placeholder {
     width: 151px;
